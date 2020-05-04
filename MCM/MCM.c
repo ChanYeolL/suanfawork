@@ -15,15 +15,18 @@ void matrix_chain_order(int *p, int length, int m[][N], int s[][N])
     {
         for(i=1; i<=(n-l+1); i++)
         {
+         //   printf("i == %d\n",i);
             j = i+l-1 ;
+         //   printf("j == %d\n",j);
             m[i][j] = INT_MAX;
             for(k=i; k<=j-1 ; k++)
             {
+         //       printf("k == %d\n",k);
                 q = m[i][k] + m[k+1][j] + p[i-1]*p[k]*p[j];
                 if(q < m[i][j])
                 {
                     m[i][j] = q;
-//                    printf(" s[%d][%d] == %d\n",i,j,k);
+         //            printf(" s[%d][%d] == %d\n",i,j,k);
                     s[i][j] = k;
                 }
             }
