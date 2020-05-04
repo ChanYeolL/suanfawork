@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+E:/CLionProjects/suanfawork/MCM/MCM.c
+MCM.h
+E:/CLionProjects/suanfawork/MCM/MCM.h
+
+E:/CLionProjects/suanfawork/MCM/MCM.h
+stdio.h
+-
+
